@@ -85,7 +85,10 @@ class MyHomepage extends StatelessWidget {
                 ),
               ),
               TextButton(
-                onPressed: (() {}),
+                onPressed: (() {
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: ((context) => const LogIn())));
+                }),
                 child: const Padding(
                   padding: EdgeInsets.only(left: 65, top: 5),
                   child: Text(
@@ -199,12 +202,9 @@ class SecondPage extends StatelessWidget {
                   bottom: 20,
                 ),
               ),
-              onPressed: () {
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: ((context) => const SecondPage())));
-              },
+              onPressed: () {},
               child: const Text(
-                "Get Started",
+                "Sign Up ",
                 style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
@@ -213,12 +213,102 @@ class SecondPage extends StatelessWidget {
             ),
           ),
           TextButton(
-            onPressed: (() {}),
+            onPressed: (() {
+              Navigator.of(context).push(
+                  MaterialPageRoute(builder: ((context) => const LogIn())));
+            }),
             child: const Padding(
               padding: EdgeInsets.only(left: 20, top: 5),
               child: Text(
                 "Already have an account ?",
                 style: TextStyle(color: Colors.red),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class LogIn extends StatelessWidget {
+  const LogIn({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Column(
+        // ignore: prefer_const_literals_to_create_immutables
+        children: [
+          const Padding(
+            padding: EdgeInsets.only(left: 30, top: 120),
+            child: Text(
+              "Notely",
+              style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 40,
+                  fontWeight: FontWeight.w900),
+            ),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Image.asset(
+            "photo/login.jpg",
+          ),
+          const Padding(
+            padding: EdgeInsets.only(top: 70, right: 270),
+            child: Text("Full Name"),
+          ),
+          Padding(
+            padding:
+                const EdgeInsets.only(left: 40, right: 40, bottom: 10, top: 5),
+            child: TextField(
+              decoration: InputDecoration(
+                hintText: "Sagar Chaudhary",
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+            ),
+          ),
+          const Padding(
+            padding: EdgeInsets.only(top: 20, right: 245),
+            child: Text("Enter Password"),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 40, right: 40, top: 5),
+            child: TextField(
+              decoration: InputDecoration(
+                hintText: "##########",
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 50, left: 15),
+            child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.red,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                padding: const EdgeInsets.only(
+                  top: 20,
+                  left: 100,
+                  right: 100,
+                  bottom: 20,
+                ),
+              ),
+              onPressed: () {},
+              child: const Text(
+                "LogIn ",
+                style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20),
               ),
             ),
           ),
