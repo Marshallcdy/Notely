@@ -63,6 +63,8 @@ flutter:
   assets:
    - photo/first.jpg
    - photo/login.jpg
+   - photo/tick.jpg
+   - photo/notes.jpg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
