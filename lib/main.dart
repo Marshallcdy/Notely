@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Start(),
+      home: Profile(),
     );
   }
 }
@@ -603,6 +603,62 @@ class Create extends StatelessWidget {
                   color: Color(0XFFF47F6B),
                 ),
               ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class Profile extends StatelessWidget {
+  const Profile({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: const Color(0XFFE5E5E5),
+      body: Column(
+        children: [
+          const Padding(
+            padding: EdgeInsets.only(left: 110, top: 20),
+            child: Text(
+              "Notely",
+              style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 30,
+                  fontWeight: FontWeight.w800),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 30),
+            child: Padding(
+              padding: const EdgeInsets.only(left: 105),
+              child: CircleAvatar(
+                radius: 80,
+                backgroundColor: const Color(0XFFE5D5C5),
+                child: Image.asset("photo/girl.jpg"),
+              ),
+            ),
+          ),
+          const Padding(
+            padding: EdgeInsets.only(left: 120, top: 30),
+            child: Text(
+              "Atit Shrestha ",
+              style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold),
+            ),
+          ),
+          const Padding(
+            padding: EdgeInsets.only(left: 120, top: 5),
+            child: Text(
+              "Chitwan, Madi",
+              style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400),
             ),
           ),
         ],
