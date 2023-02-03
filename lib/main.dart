@@ -39,11 +39,11 @@ class MyHomepage extends StatelessWidget {
             Column(
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(top: 150, left: 70),
+                  padding: const EdgeInsets.only(top: 150, left: 85),
                   child: Image.asset("photo/first.jpg"),
                 ),
                 const Padding(
-                  padding: EdgeInsets.only(left: 45, top: 40),
+                  padding: EdgeInsets.only(left: 50, top: 40),
                   child: Text(
                     "       World's Safest And \n  Largest Digital Notebook",
                     style: TextStyle(
@@ -343,17 +343,18 @@ class Start extends StatelessWidget {
             Row(
               children: [
                 const Padding(
-                  padding: EdgeInsets.only(left: 150, top: 50, bottom: 10),
+                  padding: EdgeInsets.only(left: 140, top: 100, bottom: 30),
                   child: Text(
                     "  Notely Premium ",
                     style: TextStyle(
                         color: Colors.black,
-                        fontSize: 15,
+                        fontSize: 20,
                         fontWeight: FontWeight.w900),
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 50, left: 70, bottom: 10),
+                  padding:
+                      const EdgeInsets.only(top: 100, left: 70, bottom: 30),
                   child: IconButton(
                       onPressed: (() {
                         Navigator.of(context).push(MaterialPageRoute(
@@ -365,12 +366,12 @@ class Start extends StatelessWidget {
             ),
             Image.asset("photo/tick.jpg"),
             const Padding(
-              padding: EdgeInsets.only(left: 30, top: 25),
+              padding: EdgeInsets.only(left: 30, top: 50),
               child: Text(
                 "   Start Using Notely \n with premium Benefit",
                 style: TextStyle(
                     color: Colors.black,
-                    fontSize: 20,
+                    fontSize: 30,
                     fontWeight: FontWeight.bold),
               ),
             ),
@@ -378,28 +379,28 @@ class Start extends StatelessWidget {
               padding: EdgeInsets.only(top: 10, left: 8),
               child: Text(
                 "  ✔ Save Unlimted notes on single project",
-                style: TextStyle(fontSize: 15),
+                style: TextStyle(fontSize: 18),
               ),
             ),
             const Padding(
               padding: EdgeInsets.only(top: 5, left: 4),
               child: Text(
                 "✔ Create Unlimited Project and Teams",
-                style: TextStyle(fontSize: 15),
+                style: TextStyle(fontSize: 18),
               ),
             ),
             const Padding(
               padding: EdgeInsets.only(top: 5, left: 8),
               child: Text(
                 "  ✔ Daily Backup and keep your data safe",
-                style: TextStyle(fontSize: 15),
+                style: TextStyle(fontSize: 18),
               ),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(top: 25, left: 50),
+                  padding: const EdgeInsets.only(top: 25, left: 40),
                   child: Container(
                     decoration: BoxDecoration(
                       border: Border.all(
@@ -409,8 +410,8 @@ class Start extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                       color: const Color.fromARGB(255, 240, 238, 235),
                     ),
-                    height: 135,
-                    width: 135,
+                    height: 155,
+                    width: 155,
                     child: Column(
                       children: const [
                         // ignore: prefer_const_constructors
@@ -418,7 +419,7 @@ class Start extends StatelessWidget {
                           padding: EdgeInsets.only(top: 25),
                           child: Text(
                             "Annual",
-                            style: TextStyle(fontSize: 15),
+                            style: TextStyle(fontSize: 20),
                           ),
                         ),
                         Padding(
@@ -434,7 +435,7 @@ class Start extends StatelessWidget {
                           child: Text(
                             "Per Year",
                             style: TextStyle(
-                                fontSize: 13, fontWeight: FontWeight.bold),
+                                fontSize: 15, fontWeight: FontWeight.bold),
                           ),
                         ),
                       ],
@@ -442,10 +443,10 @@ class Start extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 25, right: 50),
+                  padding: const EdgeInsets.only(top: 25, right: 35),
                   child: Container(
-                    height: 135,
-                    width: 135,
+                    height: 155,
+                    width: 155,
                     decoration: BoxDecoration(
                       border: Border.all(
                           color: Colors.black,
@@ -461,7 +462,7 @@ class Start extends StatelessWidget {
                           padding: EdgeInsets.only(top: 25),
                           child: Text(
                             "Monthly",
-                            style: TextStyle(fontSize: 15),
+                            style: TextStyle(fontSize: 20),
                           ),
                         ),
                         Padding(
@@ -477,7 +478,7 @@ class Start extends StatelessWidget {
                           child: Text(
                             "Per Month",
                             style: TextStyle(
-                                fontSize: 13, fontWeight: FontWeight.bold),
+                                fontSize: 15, fontWeight: FontWeight.bold),
                           ),
                         ),
                       ],
@@ -487,7 +488,7 @@ class Start extends StatelessWidget {
               ],
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 25, left: 15),
+              padding: const EdgeInsets.only(top: 70, left: 15),
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color(0XFFF47F6B),
@@ -495,10 +496,10 @@ class Start extends StatelessWidget {
                     borderRadius: BorderRadius.circular(10),
                   ),
                   padding: const EdgeInsets.only(
-                    top: 10,
+                    top: 20,
                     left: 100,
                     right: 100,
-                    bottom: 10,
+                    bottom: 20,
                   ),
                 ),
                 onPressed: () {},
@@ -507,7 +508,7 @@ class Start extends StatelessWidget {
                   style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
-                      fontSize: 20),
+                      fontSize: 25),
                 ),
               ),
             ),
@@ -516,8 +517,9 @@ class Start extends StatelessWidget {
               child: const Padding(
                 padding: EdgeInsets.only(left: 20, top: 5),
                 child: Text(
-                  "Restore Purchase",
+                  "Restore Purchase ?",
                   style: TextStyle(
+                    fontSize: 15,
                     color: Color(0XFFF47F6B),
                   ),
                 ),
@@ -540,7 +542,7 @@ class Create extends StatelessWidget {
       body: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.only(top: 40, left: 30, right: 30),
+            padding: const EdgeInsets.only(top: 70, left: 30, right: 30),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: const [
@@ -554,13 +556,13 @@ class Create extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 30),
+            padding: const EdgeInsets.only(top: 70),
             child: Image.asset(
               "photo/notes.jpg",
             ),
           ),
           const Padding(
-            padding: EdgeInsets.only(top: 25),
+            padding: EdgeInsets.only(top: 40),
             child: Text(
               "Create Your First Notes ",
               style: TextStyle(
@@ -583,10 +585,10 @@ class Create extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10),
                 ),
                 padding: const EdgeInsets.only(
-                  top: 15,
+                  top: 20,
                   left: 100,
                   right: 100,
-                  bottom: 15,
+                  bottom: 20,
                 ),
               ),
               onPressed: () {},
@@ -595,7 +597,7 @@ class Create extends StatelessWidget {
                 style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.w800,
-                    fontSize: 15),
+                    fontSize: 20),
               ),
             ),
           ),
@@ -609,6 +611,7 @@ class Create extends StatelessWidget {
               child: Text(
                 "Import Notes",
                 style: TextStyle(
+                  fontSize: 15,
                   color: Color(0XFFF47F6B),
                 ),
               ),
